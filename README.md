@@ -55,7 +55,15 @@ Same as `GET`, but parameters are provided as JSON (useful for longer text).
 * `200 OK` with `text/plain` ASCII QR art
 * Same cache headers as `GET`
 
-**cURL**
+### Status Codes
+
+`200` — Success (ASCII returned)
+
+`400` — Missing or invalid text
+
+`500` — Internal error
+
+### cURL
 
 ```bash
 curl -X POST "https://<your-project>.vercel.app/api/qr" \
@@ -73,6 +81,7 @@ curl -X POST "https://<your-project>.vercel.app/api/qr" \
 * **Quiet zone:** `margin` is applied in module units on all sides.
 * **Character case:** For alphanumeric optimization, the input is converted to uppercase internally (QR data is case-insensitive for this mode).
 * **Reproducibility**: This API is stateless and deterministic for the same inputs. You can safely cache responses client-side keyed by the full URL (including query string).
+  
 ---
 
 ## Limits & Recommendations
