@@ -16,7 +16,7 @@ Generate an ASCII QR code using query parameters.
 | Name     | Type                   | Required | Default | Description                                                                                                 |
 | -------- | ---------------------- | -------: | ------- | ----------------------------------------------------------------------------------------------------------- |
 | `text`   | string                 |        ✅ | —       | Content encoded in the QR code. Library auto-selects the smallest possible QR **version** for this payload. |
-| `ecc`    | `L` | `M` | `Q` | `H`  |        ❌ | `L`     | Error-correction level. Lower is smaller.                                                                   |
+| `ecc`    | `L` / `M` / `Q` / `H`  |        ❌ | `L`     | Error-correction level. Lower is smaller.                                                                   |
 | `margin` | number (0–8)           |        ❌ | `2`     | Quiet zone size in **modules** around the QR.                                                               |
 | `invert` | boolean (`1/true/yes`) |        ❌ | `false` | Swap dark/light blocks (useful for dark terminals).                                                         |
 
