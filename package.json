@@ -1,0 +1,12 @@
+{
+    "name": "vercel-qr-ascii",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+      "qrcode-generator": "^1.4.4"
+    },
+    "devDependencies": {
+      "@vercel/node": "^3.2.0",
+      "typescript": "^5.6.3"
+    }
+  }
